@@ -1,38 +1,83 @@
-.App {
+.voting-form-container {
+  background-color: #f7f9fc;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.vote-count {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.member-name {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.vote-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vote-button:hover {
+  background-color: #0056b3;
+}
+
+.vote-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.winner-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e9f5e9;
+  border: 1px solid #b3dcb3;
+  border-radius: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.winner-title {
+  color: #2a7b2a;
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.winner-details {
+  color: #555;
+  font-size: 1.2em;
 }
